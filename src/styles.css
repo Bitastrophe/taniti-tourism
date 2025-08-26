@@ -72,9 +72,4 @@ h2 {
     app-root {
         min-height: calc(100vh - 5.5rem);
     }
-
-    .contact-us-active {
-        background-size: auto 100%;
-        background-position: center bottom;
-    }
 }
