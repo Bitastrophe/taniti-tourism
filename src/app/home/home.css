@@ -16,31 +16,17 @@
     overflow: hidden;
 }
 
-#desktop-background-video {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
-    object-position: center;
-    z-index: -1;
-}
-
 #mobile-background-video {
     display: none;
 }
 
-@media screen and (min-width: 1920px) {
-    #desktop-background-video {
-        width: none;
-        height: none;
-        min-width: 100%;
-        min-height: 100%;
+@media screen and (max-width: 769px) {
+    .content-overlay h1 {
+        font-size: 2rem;
     }
 }
 
-@media screen and (max-width: 769px) {
+@media (orientation: portrait) {
     #desktop-background-video {
         display: none;
     }
@@ -55,5 +41,32 @@
         object-fit: cover;
         object-position: center;
         z-index: -1;
+    }
+}
+
+@media (orientation: landscape) {
+    #desktop-background-video {
+        display: flex;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        z-index: -1;
+    }
+    
+    #mobile-background-video {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #desktop-background-video {
+        width: none;
+        height: none;
+        min-width: 100%;
+        min-height: 100%;
     }
 }
