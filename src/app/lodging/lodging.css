@@ -18,7 +18,7 @@ p {
     flex-direction: column;
     width: 36.875rem;
     height: 12rem;
-    background: url(/images/resort.jpg);
+    background: url(/taniti-tourism/images/resort.jpg);
     background-size: cover;
     background-position: center;
     border: 2px solid white;
@@ -39,7 +39,7 @@ p {
     flex-direction: column;
     width: 36.875rem;
     height: 12rem;
-    background: url(/images/hotel.jpg);
+    background: url(/taniti-tourism/images/hotel.jpg);
     background-size: cover;
     background-position: center;
     background-position: center;
@@ -61,7 +61,7 @@ p {
     flex-direction: column;
     width: 36.875rem;
     height: 12rem;
-    background: url(/images/beach-house.jpg);
+    background: url(/taniti-tourism/images/beach-house.jpg);
     background-size: cover;
     background-position: center;
     background-position: center;
@@ -82,7 +82,7 @@ p {
     flex-direction: column;
     width: 36.875rem;
     height: 12rem;
-    background: url(/images/bed-&-breakfast.jpeg);
+    background: url(/taniti-tourism/images/bed-&-breakfast.jpeg);
     background-size: cover;
     background-position: center;
     background-position: center;

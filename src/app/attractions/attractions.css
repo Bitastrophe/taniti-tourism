@@ -18,7 +18,7 @@ p {
     flex-direction: column;
     width: 36.875rem;
     height: 12rem;
-    background: url(/images/beach.jpg);
+    background: url(/taniti-tourism/images/beach.jpg);
     background-size: cover;
     background-position: center;
     border: 2px solid white;
@@ -39,7 +39,7 @@ p {
     flex-direction: column;
     width: 36.875rem;
     height: 12rem;
-    background: url(/images/rainforest.jpg);
+    background: url(/taniti-tourism/images/rainforest.jpg);
     background-size: cover;
     background-position: center;
     background-position: center;
@@ -61,7 +61,7 @@ p {
     flex-direction: column;
     width: 36.875rem;
     height: 12rem;
-    background: url(/images/volcano.jpeg);
+    background: url(/taniti-tourism/images/volcano.jpeg);
     background-size: cover;
     background-position: center;
     background-position: center;
