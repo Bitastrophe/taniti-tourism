@@ -1,0 +1,29 @@
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 1.5rem;
+}
+
+#calendar {
+    display: block;
+    width: 824px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 2rem;
+}
+
+@media screen and (min-width: 1920px) {
+    #calendar {
+        width: 0;
+        height: none;
+        min-width: 60vw;
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #calendar {
+        width: 80vw;
+    }
+}

@@ -1,0 +1,86 @@
+.content-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+p {
+    margin-top: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#beach-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 36.875rem;
+    height: 12rem;
+    background: url(/images/beach.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    border-radius: 2.5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    user-select: none;
+}
+
+#beach-image-container:hover {
+    transform: scale(1.1);
+}
+
+
+#rainforest-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 36.875rem;
+    height: 12rem;
+    background: url(/images/rainforest.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    border: 2px solid white;
+    border-radius: 2.5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    user-select: none;
+}
+
+#rainforest-image-container:hover {
+    transform: scale(1.1);
+}
+
+
+#volcano-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 36.875rem;
+    height: 12rem;
+    background: url(/images/volcano.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    border: 2px solid white;
+    border-radius: 2.5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    user-select: none;
+}
+
+#volcano-image-container:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 690px) {
+    #beach-image-container,
+    #rainforest-image-container,
+    #volcano-image-container {
+        width: 80vw;
+    }
+}

@@ -1,0 +1,59 @@
+.content-overlay h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.video-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#desktop-background-video {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+#mobile-background-video {
+    display: none;
+}
+
+@media screen and (min-width: 1920px) {
+    #desktop-background-video {
+        width: none;
+        height: none;
+        min-width: 100%;
+        min-height: 100%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #desktop-background-video {
+        display: none;
+    }
+
+    #mobile-background-video {
+        display: flex;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        z-index: -1;
+    }
+}

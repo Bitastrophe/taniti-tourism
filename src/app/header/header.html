@@ -1,1 +1,22 @@
-<p>header works!</p>
+<header>
+    <nav class="nav-bar">
+        <div class="home-container">
+            <a id="nav-home-link" routerLink="/home" routerLinkActive="active-link">Taniti Tourism</a>
+        </div>
+        <div #menu>
+            <button id="menu-button" (click)="toggleMenu()">
+                @if (this.isBars) {
+                    <fa-icon id="fabars-icon" [icon]="faBars"></fa-icon>
+                } @else {
+                    <fa-icon id="faxmark-icon" [icon]="faXmark"></fa-icon>
+                }
+            </button>
+            <ul class="menu" [class.is-open]="isMenuOpen" (click)="handleMenuClick($event)">
+                <li><a id="nav-attractions-link" routerLink="/attractions" routerLinkActive="active-link" (click)="closeMenu()">Attractions</a></li>
+                <li><a id="nav-lodging-link" routerLink="/lodging" routerLinkActive="active-link" (click)="closeMenu()">Lodging</a></li>
+                <li><a id="nav-island-calendar-link" routerLink="/islandcalendar" routerLinkActive="active-link" (click)="closeMenu()">Island Calendar</a></li>
+                <li><a id="nav-contact-us-link" routerLink="/contactus" routerLinkActive="active-link" (click)="closeMenu()">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>

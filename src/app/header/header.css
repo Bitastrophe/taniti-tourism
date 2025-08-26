@@ -1,0 +1,152 @@
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 5rem;
+    padding: 1rem 0;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #F1E9DC;
+    z-index: 1;
+    border-radius: 0 0 50% 50% / 0 0 6.25rem 6.25rem;
+}
+
+#nav-home-link {
+    margin-left: 9.125rem;
+}
+
+#menu-button {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 7rem;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 2.125rem;
+}
+
+.nav-bar a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #806F48;
+}
+
+.nav-bar a:hover {
+    position: relative;
+}
+
+.nav-bar a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.3125rem;
+    width: 100%;
+    height: 0.1875rem;
+    background: linear-gradient(to right, #D2B48C 50%, transparent 50%);
+    background-size: 0.7rem 100%;
+    background-repeat: repeat-x;
+}
+
+.nav-bar a.active-link {
+    position: relative;
+}
+
+.nav-bar a.active-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.3125rem;
+    width: 100%;
+    height: 0.1875rem;
+    background: linear-gradient(to right, #806F48 0%, #B39B65 50%, #D2B48C 100%);
+}
+
+@media screen and (max-width: 1072px) {
+    .nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 0;
+        height: auto;
+        align-items: center;
+    }
+
+    .menu a:hover::after {
+        bottom: 0.3125rem;
+    }
+
+    .menu a.active-link::after {
+        bottom: 0.3125rem;
+    }
+
+    #nav-home-link {
+        margin-left: 1rem;
+    }
+
+    #menu-button {
+        display: flex;
+        width: 2rem;
+        height: 2rem;
+        right: 0;
+        flex-grow: 0;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        cursor: pointer;
+        border-style: none;
+        background-color: transparent;
+    }
+    
+    #fabars-icon {
+        font-size: 1.5rem;
+        color: #806F48;
+    }
+    
+    #fabars-icon:hover {
+        color: #D2B48C;
+    }
+    
+    #faxmark-icon {
+        font-size: 1.5rem;
+        color: #806F48;
+    }
+
+    #faxmark-icon:hover {
+        color: #D2B48C;
+    }
+    
+    .menu {
+        display: none;
+        line-height: 3rem;
+    }
+
+    .is-open {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        left: 0;
+        top: 4rem;
+        background-color: #F1E9DC;
+        border-radius: 0 0 60% 60% / 0 0 15.25rem 15.25rem;
+    }
+}
+
+@media screen and (max-width: 215px) {
+    .is-open {
+        top: 5.7rem;
+    }
+}

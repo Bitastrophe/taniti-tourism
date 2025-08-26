@@ -1,0 +1,108 @@
+.content-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+p {
+    margin-top: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#resort-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 36.875rem;
+    height: 12rem;
+    background: url(/images/resort.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    border-radius: 2.5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    user-select: none;
+}
+
+#resort-image-container:hover {
+    transform: scale(1.1);
+}
+
+
+#hotels-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 36.875rem;
+    height: 12rem;
+    background: url(/images/hotel.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    border: 2px solid white;
+    border-radius: 2.5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    user-select: none;
+}
+
+#hotels-image-container:hover {
+    transform: scale(1.1);
+}
+
+
+#private-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 36.875rem;
+    height: 12rem;
+    background: url(/images/beach-house.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    border: 2px solid white;
+    border-radius: 2.5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    user-select: none;
+}
+
+#private-image-container:hover {
+    transform: scale(1.1);
+}
+
+#breakfast-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 36.875rem;
+    height: 12rem;
+    background: url(/images/bed-&-breakfast.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    border: 2px solid white;
+    border-radius: 2.5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    user-select: none;
+}
+
+#breakfast-image-container:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 690px) {
+    #resort-image-container,
+    #hotels-image-container,
+    #private-image-container,
+    #breakfast-image-container {
+        width: 80vw;
+    }
+}
