@@ -52,12 +52,6 @@ a:hover {
     box-shadow: none;
 }
 
-@media screen and (max-width: 768px) {
-    .content-container {
-        min-height: 100%;
-    }
-}
-
 @media screen and (max-width: 618px) {
     .contact-info-container {
         flex-direction: column;
